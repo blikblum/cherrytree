@@ -8,8 +8,7 @@ module.exports = {
   devtool: 'source-map',
   module: {
     loaders: [
-      { test: /.*\.js$/, exclude: /node_modules/, loader: 'babel' },
-      { test: /.*node_modules\/cherrytree\/.*\.js$/, loader: 'babel' },
+      { test: /.*\.js$/, exclude: /node_modules/, loader: 'babel?presets[]=es2015' },
       { test: /\.css$/, loader: 'style!css' }
     ]
   }
